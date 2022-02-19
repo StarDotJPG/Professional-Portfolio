@@ -114,6 +114,27 @@ header nav ul li a:hover {
   padding: 10px;
 }
 
+.about-info {
+  border-left-style: solid;
+  flex: 2 70%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+.headshot {
+  background-image: url('../img/headshot.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 90px;
+  height: 90px;
+  border: solid;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
 .contact-method{
   border-bottom-style: solid;
   margin: 0 auto;
@@ -124,7 +145,6 @@ header nav ul li a:hover {
 
 .project {
   height: 300px;
-  width: 300px;
   border: solid;
   margin: 5px;
   position: relative;
@@ -138,6 +158,10 @@ header nav ul li a:hover {
   padding: 5px;
   position: absolute;
   bottom: 50px;
+}
+
+.project-name:hover {
+  cursor: pointer;
 }
 
 .cryptosource-project {
@@ -155,10 +179,11 @@ header nav ul li a:hover {
   left: 0px;
   opacity: 0.5;
   cursor: pointer;
+  transition: opacity .75s;
 }
 
-.cryptosource-project:hover {
-  transform: scale(1.01);
+.cryptosource-project:hover::before {
+  opacity: .9;
 }
 
 .quiz-project {
@@ -176,10 +201,11 @@ header nav ul li a:hover {
   left: 0px;
   opacity: 0.5;
   cursor: pointer;
+  transition: opacity .75s;
 }
 
-.quiz-project:hover {
-  transform: scale(1.01);
+.quiz-project:hover::before {
+  opacity: .9;
 }
 
 .scheduler-project {
@@ -197,10 +223,11 @@ header nav ul li a:hover {
   left: 0px;
   opacity: 0.5;
   cursor: pointer;
+  transition: opacity .75s;
 }
 
-.scheduler-project:hover {
-  transform: scale(1.01);
+.scheduler-project:hover::before {
+  opacity: .9;
 }
 
 .weather-project {
@@ -218,14 +245,11 @@ header nav ul li a:hover {
   left: 0px;
   opacity: 0.5;
   cursor: pointer;
+  transition: opacity .75s;
 }
 
-.weather-project:hover {
-  transform: scale(1.01);
-}
-
-.weather-project:hover + .weather-project::before {
-  opacity: 1;
+.weather-project:hover::before {
+  opacity: .9;
 }
 
 /*-- End hero styles --*/
