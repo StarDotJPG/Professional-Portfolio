@@ -1,0 +1,219 @@
+:root {
+  --grey: #31343d;
+  --green: #92cccd;
+  --white: #ededf7;
+}
+
+body {
+  background-color: var(--grey);  
+  color: var(--grey);
+  font-family: Helvetica, Arial, sans-serif;
+}
+  
+/* Header styles begin */
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-container {
+  margin: 20px 20px 0px 20px;
+  background-image: url('../img/banner.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  position: sticky;
+  top: 0; 
+  background-position: 65%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+    
+header a {
+  text-decoration: none;
+  color: var(--green);
+}
+
+header h1 {
+  background-color: var(--green);
+  padding: 20px;
+  margin: 0;
+  font-size: 1.55vw;
+}
+  
+header nav {
+  margin-left: auto;
+}
+  
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+  
+header nav ul li a {
+  padding: 10px 15px;
+  font-weight: bold;
+  font-size: 1.55vw;
+  border-bottom-style: solid;
+  margin: 5px;
+}
+  
+header nav ul li a:hover {
+  color: var(--white);
+}
+/* Header styles end */
+
+
+/*-- Begin hero styles --*/
+.hero {
+  margin: 0 20px;
+  background-color: var(--white);
+  color: var(--grey);
+  display: flex;
+  flex-direction: column;
+}
+
+.background-image {
+  height: 200px;
+  background-image: url('../img/banner.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 65%;
+}
+
+.section {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px auto;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 1.40vw;
+}
+
+.section-title {
+  width: 10%;
+  padding: 10px;
+}
+
+.section-info {
+  border-left-style: solid;
+  flex: 2 70%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.contact-method{
+  border-bottom-style: solid;
+  margin: 0 auto;
+  text-decoration: none;
+  color: var(--grey);
+  font-size: 1.25vw;
+}
+
+.project {
+  height: 300px;
+  width: 300px;
+  border: solid;
+  margin: 5px;
+  position: relative;
+}
+
+.project-name {
+  font-size: 1.25vw;
+  font-weight: bold;
+  color: var(--grey);
+  background-color: var(--green);
+  padding: 5px;
+  position: absolute;
+  bottom: 50px;
+}
+
+.cryptosource-project::before {
+  content: "";
+  background-image: url('../img/cryptosource.png');
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.cryptosource-project:hover {
+  transform: scale(1.01);
+}
+
+.quiz-project::before {
+  background-image: url('../img/quiz.png');
+  content: "";
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.quiz-project:hover {
+  transform: scale(1.01);
+}
+
+.scheduler-project::before {
+  background-image: url('../img/scheduler.png');
+  content: "";
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.scheduler-project:hover {
+  transform: scale(1.01);
+}
+
+.weather-project::before {
+  background-image: url('../img/weather.png');
+  content: "";
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.weather-project:hover {
+  transform: scale(1.01);
+}
+
+/*-- End hero styles --*/
+
+
+@media screen and (max-width: 768px) {
+  .project {
+    height: 150px;
+    width: 150px;
+  }
+}
