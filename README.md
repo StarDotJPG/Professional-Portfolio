@@ -1,4 +1,4 @@
-# Professional-Portfolio
+# Professional Portfolio
 
 ## Purpose
 A website that showcases projects that I have built
