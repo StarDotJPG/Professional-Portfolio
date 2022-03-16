@@ -8,7 +8,7 @@ A website that showcases projects that I have built
 * CSS
 
 ## Website
-https://stardotjpg.github.io/Professional-Portfolio/
+https://stardotjpg.github.io/professional-portfolio/
 
 ## Contribution
 Made with ❤️ by Jason Greenia
