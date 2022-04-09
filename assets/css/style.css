@@ -186,12 +186,12 @@ header nav ul li a:hover {
   opacity: .9;
 }
 
-.quiz-project {
+.cryptosource-pro {
   flex-basis: 30%;
 }
 
-.quiz-project::before {
-  background-image: url('../img/quiz.png');
+.cryptosource-pro::before {
+  background-image: url('../img/cryptosource-pro.png');
   content: "";
   background-size: cover;
   position: absolute;
@@ -204,7 +204,7 @@ header nav ul li a:hover {
   transition: opacity .75s;
 }
 
-.quiz-project:hover::before {
+.cryptosource-pro:hover::before {
   opacity: .9;
 }
 
