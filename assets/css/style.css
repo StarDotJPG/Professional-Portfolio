@@ -186,12 +186,12 @@ header nav ul li a:hover {
   opacity: .9;
 }
 
-.cryptosource-pro {
+.ebay-buddy {
   flex-basis: 30%;
 }
 
-.cryptosource-pro::before {
-  background-image: url('../img/cryptosource-pro.png');
+.ebay-buddy::before {
+  background-image: url('../img/ebay-buddy.png');
   content: "";
   background-size: cover;
   position: absolute;
@@ -204,7 +204,7 @@ header nav ul li a:hover {
   transition: opacity .75s;
 }
 
-.cryptosource-pro:hover::before {
+.ebay-buddy:hover::before {
   opacity: .9;
 }
 
